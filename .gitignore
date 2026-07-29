@@ -1,0 +1,6 @@
+build/
+cpp/build/
+.vs/
+*.exe
+*.obj
+*.pdb

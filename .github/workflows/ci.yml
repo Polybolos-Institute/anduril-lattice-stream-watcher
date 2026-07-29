@@ -1,0 +1,21 @@
+name: anduril-lattice-stream-watcher CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  windows-cpp:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch shared REST lib
+        run: |
+          git clone --depth 1 https://github.com/Polybolos-Institute/anduril-lattice-rest-winhttp.git ../anduril-lattice-rest-winhttp
+      - name: Configure and build
+        working-directory: cpp
+        run: |
+          cmake -B build -A x64
+          cmake --build build --config Release
