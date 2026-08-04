@@ -1,5 +1,12 @@
 # anduril-lattice-stream-watcher
 
+## Status & recognition (factual)
+
+> Independent Polybolos Institute sample (not an Anduril product).  
+> OASW(SO/LIC) Jul 2026 **Selected** (technically meritorious; under evaluation/consideration).  
+> AFRL Apr 2026: RQ portfolio share (Col Rondeau) + Control Science Center exchange (Weintraub; “state of the art” / partnership / SBIR language in correspondence). Attributed dialogue.  
+> TRL 5 Decision-C2 lineage · Lattice sandbox / interop sample · Inquiries: mark.brown@polybolos.org · CAGE 1AVY9 · UEI RUSHH9B2UQV3
+
 Read-only **Anduril Lattice** entity stream watcher (Windows / WinHTTP SSE).
 
 Connects with sandbox OAuth, opens `POST /api/v1/entities/stream`, and logs
